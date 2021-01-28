@@ -1,0 +1,13 @@
+.header p{
+    color: black;
+    font-weight: bold;
+    font-size: 3rem; /*文字サイズ3倍*/
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
+}
+
+main h1{
+    color:rgb(78, 78, 78);
+}
