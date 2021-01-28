@@ -8,6 +8,68 @@
     background-color: bisque;
 }
 
+body a{
+    text-decoration: none;
+    color: rgb(5, 170, 107);
+}
+body a:hover{
+    text-decoration: underline;
+}
+
+main h1:hover{
+    color: rgb(173, 173, 173);
+}
+
 main h1{
     color:rgb(78, 78, 78);
+}
+
+/* ボタン */
+.buttoms{
+    list-style: none;
+    display: flex;
+}
+.buttoms li{
+    text-align: center;
+}
+
+.follow_buttom{
+    font-family:'Arial',sans-serif;/* 好きなフォントを指定してね */
+    border-radius:4px;
+    position:relative;
+    width:66px;
+    height:58px;
+    font-size:30px;
+    color:#fff!important;
+    transition:.5s;
+    text-decoration:none;
+    box-shadow:0 1px 2px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Twitter */
+.twitter{
+    background:#55acee;
+}
+.mail{
+    background: rgb(46, 44, 44);
+}
+
+/* ボタン内テキスト調整 */
+.follow_buttom div{
+    font-size:15px;	
+    font-weight:bold;
+    letter-spacing:0;
+    bottom:0;
+    color: white;
+    }
+
+/* ボタンマウスホバー時 */
+.follow_buttom:hover{
+    -webkit-transform:translateY(-5px);
+    -ms-transform:translateY(-5px);
+    transform:translateY(-5px);
+    text-decoration:none;
 }
