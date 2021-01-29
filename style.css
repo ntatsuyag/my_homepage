@@ -1,12 +1,61 @@
-.header p{
-    color: black;
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header p{
+    color: white;
     font-weight: bold;
-    font-size: 3rem; /*文字サイズ3倍*/
+    font-size: 3rem;
     font-family: sans-serif;
     width: 100%;
     text-align: center;
-    background-color: rgb(172, 172, 172);
-    border-radius: 10px;
+    background-color: gray;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.side_main{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* サイドバー */
+aside{
+    flex: 1;
+    min-width: 170px;
+}
+aside ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li{
+    text-decoration: none;
+    border-radius:4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+}
+aside div{
+    font-family:'Arial',sans-serif;
+    color: gray;
+    font-size: 2rem;
+}
+aside li:hover{
+    background:rgba(128, 128, 128, 0.65);
+    
+}
+aside div:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+main{
+    flex: 9;
 }
 
 /* bodyのリンク */
@@ -18,15 +67,22 @@ body a:hover{
     text-decoration: underline;
 }
 
-main h1,h2{
-    color:rgb(78, 78, 78);
+main h1{
+    color: white;
+    border-radius:4px;
+    background:gray;
+    padding-left: 3px;
+}
+main h2{
+    color:gray;
 }
 
+
 /* ページ内リンク */
-.in_links{
+/* .in_links{
     list-style-type: none;
     display: flex;
-    justify-content: center; /* 中央寄せ */
+    justify-content: center;
     padding-left: 0;
 }
 .in_links li{
@@ -48,7 +104,7 @@ main h1,h2{
 }
 .in_links div:hover{
     text-decoration: underline;
-}
+} */
 
 /* ボタン全体 */
 .buttoms{
