@@ -15,6 +15,57 @@ header p{
     margin-bottom: 5px;
 }
 
+/* サイドメニュー */
+.open, .close{
+    display: none;
+}
+/* チェックボックスは左に隠す */
+.side_main input[type="checkbox"]{
+    position: absolute;
+    left: -50vw;
+}
+
+/* 1000px以下の画面なら */
+@media screen and (max-width: 1000px){
+    .open, .close{
+        display: flex;
+    }
+    .open{
+        position: absolute;
+        transition: 0.2s;
+    }
+    .open div{
+        font-family:'Arial',sans-serif;
+        color: gray;
+        font-size: 1.5rem;
+    }
+    .open:hover{
+        transform:translateX(5px);
+    }
+    aside{
+        position: absolute;
+        left: -300px;
+        height: 100%;
+        transition: 0.3s;
+        background: #fff;
+    }
+    main{
+        padding-top: 5px;
+    }
+
+    /* checkboxの挙動を指定 */
+    .side_main input[type="checkbox"]:checked ~ aside{
+        left: 0;
+    }
+    .side_main input[type="checkbox"]:checked ~ .close{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(128, 128, 128, 0.452); 色をつけたいならこれをつかう*/
+    }
+
+}
+
 .side_main{
     margin: 0;
     display: flex;
