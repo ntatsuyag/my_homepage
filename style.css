@@ -1,6 +1,17 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+body:not(:first-child){
+    /* display: flex; */
+    align-items: center;
+}
+
+header{
+    width: 100%;
 }
 
 header p{
@@ -75,7 +86,6 @@ header p{
 
 /* サイドバー */
 aside{
-    flex: 1;
     min-width: 170px;
 }
 aside ul{
@@ -109,7 +119,7 @@ aside div:hover{
 
 
 main{
-    flex: 9;
+    width: 85%;
 }
 
 /* bodyのリンク */
