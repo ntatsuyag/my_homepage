@@ -16,17 +16,18 @@ header p{
 }
 
 /* サイドメニュー */
-.open, .close{
+/* .open, .close{
     display: none;
-}
+} */
 /* チェックボックスは左に隠す */
-.side_main input[type="checkbox"]{
+/* .side_main input[type="checkbox"]{
     position: absolute;
     left: -50vw;
-}
+} */
+
 
 /* 1000px以下の画面なら */
-@media screen and (max-width: 1000px){
+/* @media screen and (max-width: 1000px){
     .open, .close{
         display: flex;
     }
@@ -53,7 +54,7 @@ header p{
         padding-top: 5px;
     }
 
-    /* checkboxの挙動を指定 */
+    checkboxの挙動を指定 
     .side_main input[type="checkbox"]:checked ~ aside{
         left: 0;
     }
@@ -61,10 +62,10 @@ header p{
         position: absolute;
         width: 100%;
         height: 100%;
-        /* background: rgba(128, 128, 128, 0.452); 色をつけたいならこれをつかう*/
+        background: rgba(128, 128, 128, 0.452); 色をつけたいならこれをつかう
     }
 
-}
+} */
 
 .side_main{
     margin: 0;
@@ -80,6 +81,9 @@ aside{
 aside ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around
+
 }
 
 aside li{
@@ -87,7 +91,6 @@ aside li{
     border-radius:4px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
 }
 aside div{
@@ -127,35 +130,20 @@ main h1{
 main h2{
     color:gray;
 }
+main h3{
+    color:gray;
+}
 
-
-/* ページ内リンク */
-/* .in_links{
-    list-style-type: none;
+.profile_pic{
     display: flex;
-    justify-content: center;
-    padding-left: 0;
+    justify-content: space-between;
+    align-items: center;
 }
-.in_links li{
-    text-decoration: none;
-    border-radius:4px;
-    background:rgb(172, 172, 172);
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 3px 3px 3px 3px;
+/* 画像の変形 */
+.profile_pic img{
+    margin-right: 20px;
+    clip-path: circle(50% at 50% 50%);
 }
-.in_links div{
-    font-family:'Arial',sans-serif;
-    color: white;
-    font-size: 2rem;
-}
-.in_links li:hover{
-    background:rgba(172, 172, 172, 0.65);
-    
-}
-.in_links div:hover{
-    text-decoration: underline;
-} */
 
 /* ボタン全体 */
 .buttoms{
