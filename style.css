@@ -192,6 +192,9 @@ main h3{
 .github{
     background: black;
 }
+.qiita{
+    background: #55c500;
+}
 
 /* ボタン内テキスト調整 */
 .follow_buttom div{
