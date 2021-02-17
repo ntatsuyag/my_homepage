@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatsuya Nishiyama</title>
     <link rel="stylesheet" href="style.css" media="screen">
+    <!-- Font Awesome用 -->
+    <script src="https://kit.fontawesome.com/f64e0aa112.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,10 +15,11 @@
             <nav>
                 <ul class="side_links">
                     <li><a href="#Profile"><div>Profile</div></a></li>
-                    <li><a href="#Career"><div>Career</div></a></li>
+                    <li><a href="#Skill"><div>Skill</div></a></li>
                     <li><a href="#Contact"><div>Contact</div></a></li>
                     <li><a href="#Research"><div>Research</div></a></li>
                     <li><a href="#Other"><div>Other</div></a></li>
+                    <li><a href="#Career"><div>Career</div></a></li>
                 </ul>
             </nav>
         </aside>
@@ -27,39 +30,50 @@
         <label for="menu" class="open"><div>Menu</div></label>
         <label for="menu" class="close"></label> -->
     <main>
-        <h1 id="Profile">Profile</h1>
+        <h1 id="Profile"><i class="fas fa-id-card fa-fw"></i>Profile</h1>
         <div class="profile_pic">
             <div>
-                <h3>西山 達也</h3>
+                <h2>西山 達也</h2>
+                <h3>所属</h3>
                 <div>名古屋工業大学 大学院 修士1年生</div>
                 <a href="https://www.slp.nitech.ac.jp/"><div>李・酒向研究室</div></a>
                 <p>対話システム、自然言語処理、深層学習といったテーマについて研究しています。</p>
-                <div>言語はpython, C, Javaは触れます。</div>
-                <div>Pytorch,Tensorflowも一応。</div>
-                <div>最近はflask等を用いてwebサービス開発ついて勉強中です。</div>
                 <h3>趣味</h3>
                 <div>ブレイクダンス、漫画</div>
             </div>
             <img src="./header_tatsuya.JPG" alt="tatsuya_picture" width="150px" height="150px">
         </div>
-        <h1 id="Career">Career</h1>
-            <ul>
-                <li>2016/4 名古屋工業大学 創造工学教育課程 情報社会コース 入学</li>
-                <li>2020/3 名古屋工業大学 創造工学教育課程 情報社会コース 卒業</li>
-                <li>2020/4 名古屋工業大学大学院 創造工学プログラム 入学</li>
-            </ul>
-        
-        <h1 id="Contact">Contact</h1>
+
+        <h1 id="Skill"><i class="fas fa-pen fa-fw"></i>Skill</h1>
+            <h3>言語</h3>
+            <dl class="skills">
+                <dt>python</dt>
+                <dd>研究で扱っています。</dd>
+                <dt>C</dt>
+                <dd>授業で触った。基礎的な部分はわかります。</dd>
+                <dt>Java</dt>
+                <dd>授業で触った。基礎的な部分はわかります。</dd>
+            </dl>
+            <h3>フレームワーク</h3>
+            <dl class="skills">
+                <dt>PyTorch</dt>
+                <dd>研究で触ってます。</dd>
+                <dt>Tensorflow</dt>
+                <dd>研究で触ってます。</dd>
+            </dl>
+            <div>最近はflask等のフレームワークを用いてwebサービス開発ついて勉強中です。</div>
+
+        <h1 id="Contact"><i class="fas fa-inbox fa-fw"></i>Contact</h1>
         
         <p>連絡はこちらに → E-mail:nityamanishi@gmail.com</p>
         <nl class="buttoms">
-            <li><a class="follow_buttom mail" href="mailto:nityamanishi@gmail.com"><div>E-mail</div></a></li>
-            <li><a class="follow_buttom twitter" href="https://twitter.com/yama_nisshii"><div>Twitter</div></a></li>
-            <li><a class="follow_buttom github" href="https://github.com/ntatsuyag"><div>GitHub</div></a></li>
+            <li><a class="follow_buttom mail" href="mailto:nityamanishi@gmail.com"><div><i class="fas fa-envelope fa-2x"></i></div></a></li>
+            <li><a class="follow_buttom twitter" href="https://twitter.com/yama_nisshii"><div><i class="fab fa-twitter fa-2x"></i></div></a></li>
+            <li><a class="follow_buttom github" href="https://github.com/ntatsuyag"><div><i class="fab fa-github fa-2x"></i></div></a></li>
             <li><a class="follow_buttom qiita" href="https://qiita.com/ntatsuya"><div>Qiita</div></a></li>
         </nl>
-        
-        <h1 id="Research">Research</h1>
+
+        <h1 id="Research"><i class="fas fa-search fa-fw"></i>Research</h1>
         <ul>
             <li>
                 <div>DSTC8, ポスター発表</div>
@@ -70,10 +84,18 @@
             <div style="margin-left: 5px;">30.自動音声応答におけるユーザー沈黙時の発話誘導 〇西山達也 李晃伸（名工大） 戸田隆道 友松祐太 杉山雅和（AI Shift）</div>
             </li>
         </ul>
-        <h1 id="Other">Other</h1>
+        <h1 id="Other"><i class="fas fa-question fa-fw"></i>Other</h1>
             <h2>インターン</h2>
+            <dl>
+                <dt>2020/9/3 ~ 30：株式会社 AI Shift</dt>
+                <dd>音声自動応答についての改善に取り組みました。インターン体験記を<a href="https://www.ai-shift.co.jp/techblog/1293">TechBlog</a>に書きました。対話システムシンポジウムでの発表については<a href="https://www.ai-shift.co.jp/techblog/1416">こちら</a>。</dd>
+            </dl>
+
+        <h1 id="Career"><i class="fas fa-shoe-prints fa-fw"></i>Career</h1>
             <ul>
-                <li>2020/9/3 ~ 30：株式会社 AI Shift</li>
+                <li>2016/4 名古屋工業大学 創造工学教育課程 情報社会コース 入学</li>
+                <li>2020/3 名古屋工業大学 創造工学教育課程 情報社会コース 卒業</li>
+                <li>2020/4 名古屋工業大学大学院 創造工学プログラム 入学</li>
             </ul>
 
         <footer>

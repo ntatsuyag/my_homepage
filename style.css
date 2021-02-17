@@ -155,6 +155,10 @@ main h3{
     clip-path: circle(50% at 50% 50%);
 }
 
+.skills{
+    list-style: none;
+}
+
 /* ボタン全体 */
 .buttoms{
     list-style: none;
